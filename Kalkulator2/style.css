@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+* , html, body, p {
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+    font-size: large;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin-top: 10%;
+    background-color: #191414;
+}
+
+
+/*  Grid  */
+.main-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.main-left {
+    position: relative;
+    justify-content: flex-end !important
+}
+#calc-container {
+    justify-content: left;
+    float: right;
+}
+
+/*  Input  */
+#input {
+    margin-right: 0px;
+    box-shadow: 0 0px 5px rgb(165, 17, 140), 0 0px 18px rgb(165, 17, 140);
+    margin-bottom: 15px;
+    width: 98%;
+    height: 2em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #FDFEFE;
+    padding-right: 10px;
+    font-size: 3em;
+    text-align: right;
+    background-color: #212a32;
+    transition: all 0.3s ease-in
+}
+
+#buttons-container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    text-align: center;
+
+}
+#extra-container {
+    display: none;
+    grid-template-columns: repeat(4, auto);
+    text-align: center;
+
+}
+.grid1 {
+    display: grid !important
+}
+
+/*  Btn's  */
+.btn {
+    box-shadow: 0 0px 5px rgb(165, 17, 140), 0 2px 12px rgb(165, 17, 140);
+    display: flex;
+    font-size: 1.2em;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    transition: all 0.1s ease-in;
+    border: 0.3px solid rgba(251, 253, 255, 0.171);
+}
+
+.btn2 {
+    box-shadow: 0 0px 5px rgb(17, 160, 165), 0 2px 12px rgb(17, 160, 165);
+    display: flex;
+    font-size: 1.2em;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    transition: all 0.1s ease-in;
+    border: 0.3px solid rgba(251, 253, 255, 0.171);
+}
+
+.dot {
+    grid-column: span 2;
+}
+
+.equal {
+    grid-row: span 1;
+}
+
+.btn-num {
+    background-color: rgba(165, 17, 140, 0.4);
+    color: #d7e2de;
+}
+.btn-num2 {
+    background-color: rgba(17, 160, 165, 0.4);
+    color: #d7e2de;
+}
+
+.btn-num:hover, .btn-num2:hover {
+    background-color: #212a32;
+}
+
+.btn-operator {
+
+    background-color: magenta;
+    color: #ffffff;
+}
+
+.btn-operator:hover {
+    background-color: hotpink !important
+}
+
+.equal{
+    background-color: magenta;
+}
